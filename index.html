@@ -1,34 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio Gustavo Fraga</title>
+    <title>Gustavo Fraga | Portfólio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="light">
 
-    <header>
-        <div class="interface">
-            <div class="logo">
-                <a href="#">
-                    <img src="images/logo.png" alt="">
+<header>
+    <div class="container">
+        <h1 class="logo">Gustavo<span>.</span></h1>
+
+        <nav id="nav">
+            <a href="#home">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#skills">Skills</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato" class="btn">Contato</a>
+        </nav>
+
+        <!-- BOTÃO DARK MODE -->
+        <button id="theme-toggle" aria-label="Alternar tema">
+            🌙
+        </button>
+    </div>
+</header>
+
+<section id="home" class="hero reveal">
+    <div class="container">
+        <h2>Olá, eu sou</h2>
+        <h1>Gustavo Fraga</h1>
+        <p>
+            Estudante de Ciência da Computação focado em desenvolvimento
+            e em busca da primeira oportunidade de estágio.
+        </p>
+
+        <div class="hero-actions">
+            <a href="#projetos" class="btn">Ver Projetos</a>
+            <a href="#contato" class="btn-outline">Contato</a>
+        </div>
+    </div>
+</section>
+
+<section id="sobre" class="section reveal">
+    <div class="container">
+        <h2 class="section-title">Sobre mim</h2>
+        <p class="section-text">
+            Sou estudante do 5º semestre de Ciência da Computação, com interesse em
+            desenvolvimento de software. Tenho experiência com Java, C e desenvolvimento web.
+            Busco um estágio onde eu possa aprender, evoluir e contribuir com soluções reais.
+        </p>
+    </div>
+</section>
+
+<section id="skills" class="section bg-alt reveal">
+    <div class="container">
+        <h2 class="section-title">Habilidades</h2>
+
+        <div class="skills-grid">
+            <div class="skill-card">Java</div>
+            <div class="skill-card">C</div>
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">Manutenção de Computadores</div>
+        </div>
+    </div>
+</section>
+
+<section id="projetos" class="section reveal">
+    <div class="container">
+        <h2 class="section-title">Projetos</h2>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Sistema em Java</h3>
+                <p>
+                    Projeto acadêmico focado em orientação a objetos,
+                    lógica de programação e organização de código.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Portfólio Pessoal</h3>
+                <p>
+                    Site desenvolvido com HTML, CSS e JavaScript,
+                    com foco em design moderno, responsivo e acessível.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contato" class="section reveal">
+    <div class="container">
+        <h2 class="section-title">Contato</h2>
+
+        <p class="section-text">
+            Estou disponível para oportunidades de estágio.
+            Entre em contato pelos canais abaixo.
+        </p>
+
+        <div class="contato-grid">
+            <div class="contato-card">
+                <span>Email</span>
+                <a href="mailto:gustavofraga@email.com">
+                    gustavofraga@email.com
                 </a>
             </div>
-            <nav class="menu-desktop">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Especialidades</a></li>
-                    <li><a href="#">Projetos</a></li>
-                </ul>
-            </nav>
-            <div class="btn-contato"> 
-                <a href="#">
-                    <button>Contato</button>
+
+            <div class="contato-card">
+                <span>GitHub</span>
+                <a href="https://github.com/seuusuario" target="_blank">
+                    github.com/seuusuario
                 </a>
             </div>
-    </header>
+        </div>
+    </div>
+</section>
 
+<footer>
+    <p>© 2026 — Gustavo Fraga</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
